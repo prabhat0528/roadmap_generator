@@ -22,7 +22,7 @@ function RoadmapChat({ loadText = "", reloadList, onNewChat }) {
     setCurrentRoadmapId(null);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/roadmap/generate", {
+      const res = await axios.post("https://roadmap-generator-backend-vc1n.onrender.com/api/roadmap/generate", {
         prompt,
       });
 

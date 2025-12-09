@@ -25,7 +25,7 @@ function RoadmapList({ filterTopic = "", onSelect }) {
     setRoadmaps([]);
 
     try {
-      const url = `http://localhost:5000/api/roadmap/all?topic=${encodeURIComponent(
+      const url = `https://roadmap-generator-backend-vc1n.onrender.com/api/roadmap/all?topic=${encodeURIComponent(
         topic.trim()
       )}`;
       const { data } = await axios.get(url);
