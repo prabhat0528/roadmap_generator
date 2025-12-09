@@ -42,7 +42,7 @@ function RoadmapChat({ loadText = "", reloadList, onNewChat }) {
 
   const handleDownload = () => {
     if (!currentRoadmapId) return;
-    window.open(`http://localhost:5000/api/export/${currentRoadmapId}`, "_blank");
+    window.open(`https://roadmap-generator-backend-vc1n.onrender.com/api/export/${currentRoadmapId}`, "_blank");
   };
 
   return (
