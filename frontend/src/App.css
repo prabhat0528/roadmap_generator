@@ -1,0 +1,41 @@
+/* ===== ALWAYS DARK MODE FIX FOR GENERATED CONTENT ===== */
+
+.dark .roadmap-output,
+.dark .roadmap-output * {
+  color: #e5e7eb !important;   /* text-gray-200 */
+  background-color: transparent !important;
+}
+
+/* Headings */
+.dark .roadmap-output h1,
+.dark .roadmap-output h2,
+.dark .roadmap-output h3,
+.dark .roadmap-output h4 {
+  color: #ffffff !important;
+}
+
+/* Links */
+.dark .roadmap-output a {
+  color: #93c5fd !important;
+  text-decoration: underline;
+}
+
+/* Code blocks */
+.dark .roadmap-output pre,
+.dark .roadmap-output code {
+  background: rgba(255,255,255,0.08) !important;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #f8fafc !important;
+}
+
+/* Light mode override (not used, but kept safe) */
+.roadmap-output,
+.roadmap-output * {
+  color: #f1f5f9 !important; /* light slate for dark UI */
+}
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
